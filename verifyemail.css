@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+}
+
+/* Main Container */
+.maindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Outer Container */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Section */
+.container-left {
+    width: 50%;
+    background-color: #0077b6;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-left h1 {
+    margin-bottom: 15px;
+}
+
+.container-left p {
+    font-size: 16px;
+}
+
+/* Right Section */
+.container-right {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Form Header */
+.form-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-header h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333333;
+}
+
+/* Input Fields */
+.field-input {
+    margin-bottom: 20px;
+}
+
+.field-input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.field-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Form Button */
+.form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #005f86;
+}
+
+/* Links */
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #0077b6;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

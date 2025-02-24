@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Panel</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        // Frontend logic to handle signup and redirection
+        function handleSignup(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Simulate saving user data or validation here
+            console.log("Signup form submitted!");
+
+            // Redirect to the verify email page
+            window.location.href = "./verifyemail.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="container">
+            <!-- Left Side Section -->
+            <div class="container-left">
+                <h1>Welcome<br> to the Family!</h1>
+                <p>Join us today and take the first step towards better health and awareness.</p>
+            </div>
+
+            <!-- Right Side Signup Form -->
+            <div class="container-right">
+                <div class="form-header">
+                    <h1>Signup</h1>
+                    <p>Create your account to get started</p>
+                </div>
+
+                <!-- Signup Form -->
+                <form class="user-login" onsubmit="handleSignup(event)">
+                    <div class="field-input">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="field-input">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="field-input">
+                        <label for="contactNumber">Contact Number:</label>
+                        <input type="text" id="contactNumber" name="contactNumber" placeholder="Enter your contact number (e.g., +977-9876543210)" required>
+                    </div>
+
+                    <div class="field-input">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Create a password" required>
+                    </div>
+
+                    <div class="field-input">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-option">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">
+                            I agree to the <a href="./privacy-policy.html" target="_blank">Terms and Conditions</a>.
+                        </label>
+                    </div>
+
+                    <!-- Signup Button -->
+                    <button class="form-button" type="submit">
+                        <p>Sign Up</p>
+                    </button>
+                </form>
+
+                <!-- Login Link -->
+                <a href="./login.html">Already have an account? Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
