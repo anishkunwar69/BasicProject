@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Email</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="card">
+           <div class="welcome-section">
+                <div class="welcome-icon">✉️</div>
+                <h1>Verify Email!</h1>
+                <p>Please enter the verification code sent to your email.</p>
+            </div>
+
+            <div class="form-section">
+                <form id="verifyForm" onsubmit="return handleVerifyEmail(event)">
+                    <div class="input-group">
+                        <div class="otp-inputs" id="otpInputs">
+                            <input type="text" maxlength="1" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" pattern="[0-9]" required>
+                        </div>
+                    </div>
+
+                    <div class="timer">Code expires in: <span class="timer-text">10:00 minutes</span></div>
+                    
+                    <div id="message" class="message"></div>
+
+                    <button type="submit" class="submit-btn">Verify Email</button>
+
+                    <p class="login-link">
+                        Didn't receive code? <a href="#" onclick="handleResendOTP(); return false;">Resend</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>

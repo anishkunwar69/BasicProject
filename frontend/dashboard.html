@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareNest Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dashboard-body">
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h1>CareNest</h1>
+        </div>
+        
+        <ul class="nav-links">
+            <li class="active">
+                <a href="#overview"><i class="fas fa-home"></i>Overview</a>
+            </li>
+            <li>
+                <a href="#symptoms"><i class="fas fa-notes-medical"></i>Symptoms Tracker</a>
+            </li>
+            <li>
+                <a href="#appointments"><i class="fas fa-calendar-alt"></i>Telemedicine</a>
+            </li>
+            <li>
+                <a href="#resources"><i class="fas fa-book-medical"></i>Resources</a>
+            </li>
+            <li>
+                <a href="#profile"><i class="fas fa-user"></i>Profile</a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <button class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="top-bar-right">
+                <button class="notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <section class="welcome-section">
+                <h2>Welcome back, John! 👋</h2>
+                <p>Here's your health overview for today</p>
+            </section>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #e3f2fd;">
+                        <i class="fas fa-calendar-check" style="color: #1976d2;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Next Appointment</h3>
+                        <p>Today, 2:00 PM</p>
+                        <span>with Dr. Sarah Smith</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #f3e5f5;">
+                        <i class="fas fa-pills" style="color: #9c27b0;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Medication Due</h3>
+                        <p>2 medications</p>
+                        <span>Next dose in 1 hour</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #e8f5e9;">
+                        <i class="fas fa-heartbeat" style="color: #43a047;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Symptom Status</h3>
+                        <p>Stable</p>
+                        <span>Last updated 2h ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <section class="dashboard-card appointments-section">
+                    <div class="card-header">
+                        <h3>Upcoming Appointments</h3>
+                        <button class="view-all-btn">View All</button>
+                    </div>
+                    <div class="appointment-list">
+                        <div class="appointment-item">
+                            <div class="appointment-time">
+                                <span class="date">Feb 15</span>
+                                <span class="time">2:00 PM</span>
+                            </div>
+                            <div class="appointment-info">
+                                <h4>Telemedicine Consultation</h4>
+                                <p>Dr. Sarah Smith - Oncologist</p>
+                            </div>
+                            <button class="join-btn">Join Call</button>
+                        </div>
+                        <div class="appointment-item">
+                            <div class="appointment-time">
+                                <span class="date">Feb 18</span>
+                                <span class="time">11:30 AM</span>
+                            </div>
+                            <div class="appointment-info">
+                                <h4>Follow-up Check</h4>
+                                <p>Dr. Michael Chen - Radiologist</p>
+                            </div>
+                            <button class="reschedule-btn">Reschedule</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="dashboard-card symptoms-section">
+                    <div class="card-header">
+                        <h3>Symptoms Overview</h3>
+                        <button class="track-btn">Track Now</button>
+                    </div>
+                    <div class="symptoms-chart">
+                        <div class="chart-placeholder">
+                            <p>Weekly Symptoms Trend</p>
+                        </div>
+                    </div>
+                    <div class="quick-track">
+                        <button class="symptom-btn pain">Pain Level</button>
+                        <button class="symptom-btn fatigue">Fatigue</button>
+                        <button class="symptom-btn appetite">Appetite</button>
+                    </div>
+                </section>
+
+                <section class="dashboard-card resources-section">
+                    <div class="card-header">
+                        <h3>Latest Resources</h3>
+                        <button class="view-all-btn">Browse All</button>
+                    </div>
+                    <div class="resources-list">
+                        <div class="resource-item">
+                            <div class="resource-icon article">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="resource-info">
+                                <h4>Understanding Your Treatment Plan</h4>
+                                <p>5 min read • Updated today</p>
+                            </div>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-icon video">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="resource-info">
+                                <h4>Nutrition During Treatment</h4>
+                                <p>Video • 12 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="dashboard-card notifications-section">
+                    <div class="card-header">
+                        <h3>Recent Notifications</h3>
+                        <button class="view-all-btn">View All</button>
+                    </div>
+                    <div class="notifications-list">
+                        <div class="notification-item unread">
+                            <div class="notification-icon reminder">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="notification-info">
+                                <h4>Medication Reminder</h4>
+                                <p>Time to take your evening medication</p>
+                                <span class="time">5 min ago</span>
+                            </div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-icon appointment">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="notification-info">
+                                <h4>Appointment Confirmed</h4>
+                                <p>Your appointment with Dr. Smith is confirmed</p>
+                                <span class="time">2 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 

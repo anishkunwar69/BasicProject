@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="card">
+            <div class="welcome-section">
+                <div class="welcome-icon">👋</div>
+                <h1>Welcome!</h1>
+                <p>Create your account and join our community today.</p>
+            </div>
+
+            <div class="form-section">
+                <form id="registerForm" onsubmit="return handleRegister(event)">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <label for="firstName">First Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <label for="lastName">Last Name</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password</label>
+                        <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="date" id="dob" name="dob" required>
+                            <label for="dob">Date of Birth</label>
+                        </div>
+                        <div class="input-group">
+                            <select id="gender" name="gender" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="gender">Gender</label>
+                        </div>
+                    </div>
+
+                    <div id="message" class="message"></div>
+
+                    <button type="submit" class="submit-btn">Create Account</button>
+
+                    <p class="login-link">
+                        Already have an account? <a href="login.html">Log in</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html> 

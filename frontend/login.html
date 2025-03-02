@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Panel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="card">
+            <div class="welcome-section">
+                <div class="welcome-icon">👋</div>
+                <h1>Welcome!</h1>
+                <p>Your trusted platform for cancer care and awareness.</p>
+            </div>
+
+            <div class="form-section">
+                <form id="loginForm" onsubmit="return handleLogin(event)">
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password</label>
+                        <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                      
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <a href="forgotpassword.html" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <div id="message" class="message"></div>
+
+                    <button type="submit" class="submit-btn">Login</button>
+
+                    <p class="login-link">
+                        New user? <a href="register.html">Sign up</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>
